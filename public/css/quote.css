@@ -42,7 +42,7 @@ body {
 }
 
 #top_content {
-    height: 10vh;
+    height: 20vh;
 }
 
 #category {
@@ -64,4 +64,5 @@ body {
     -ms-transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+	text-align: center;
 }
