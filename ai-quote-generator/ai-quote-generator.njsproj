@@ -31,13 +31,47 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="public\javascript\quote-generator.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Content Include="package.json" />
+    <Content Include="public\css\quote.css" />
+    <Content Include="public\icon\android-icon-144x144.png" />
+    <Content Include="public\icon\android-icon-192x192.png" />
+    <Content Include="public\icon\android-icon-36x36.png" />
+    <Content Include="public\icon\android-icon-48x48.png" />
+    <Content Include="public\icon\android-icon-72x72.png" />
+    <Content Include="public\icon\android-icon-96x96.png" />
+    <Content Include="public\icon\apple-icon-114x114.png" />
+    <Content Include="public\icon\apple-icon-120x120.png" />
+    <Content Include="public\icon\apple-icon-144x144.png" />
+    <Content Include="public\icon\apple-icon-152x152.png" />
+    <Content Include="public\icon\apple-icon-180x180.png" />
+    <Content Include="public\icon\apple-icon-57x57.png" />
+    <Content Include="public\icon\apple-icon-60x60.png" />
+    <Content Include="public\icon\apple-icon-72x72.png" />
+    <Content Include="public\icon\apple-icon-76x76.png" />
+    <Content Include="public\icon\apple-icon-precomposed.png" />
+    <Content Include="public\icon\apple-icon.png" />
+    <Content Include="public\icon\browserconfig.xml" />
+    <Content Include="public\icon\favicon-16x16.png" />
+    <Content Include="public\icon\favicon-32x32.png" />
+    <Content Include="public\icon\favicon-96x96.png" />
+    <Content Include="public\icon\favicon.ico" />
+    <Content Include="public\icon\manifest.json" />
+    <Content Include="public\icon\ms-icon-144x144.png" />
+    <Content Include="public\icon\ms-icon-150x150.png" />
+    <Content Include="public\icon\ms-icon-310x310.png" />
+    <Content Include="public\icon\ms-icon-70x70.png" />
     <Content Include="README.md" />
     <Content Include="views\index.pug" />
     <Content Include="views\layout.pug" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public\" />
+    <Folder Include="public\css\" />
+    <Folder Include="public\javascript\" />
+    <Folder Include="public\icon\" />
     <Folder Include="views\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
