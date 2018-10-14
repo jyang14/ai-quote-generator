@@ -1,0 +1,35 @@
+﻿extends layout.pug
+
+block content
+  
+
+  #top
+    h1#title Quote Generator
+    br
+    .mdc-typography--headline5#pick Pick a category: 
+    br
+    #name.mdc-select
+      select.mdc-select__native-control.mdc-list
+        option.mdc-list-item(value='' disabled='' selected='')
+        option.mdc-list-item(value='love') Love
+        option.mdc-list-item(value='life') Life
+        option.mdc-list-item(value='inspirational') Inspirational
+        option.mdc-list-item(value='humorous') Humorous
+        option.mdc-list-item(value='philosphical') Philosophical
+        option.mdc-list-item(value='wisdom') Wisdom
+        option.mdc-list-item(value='happy') Happy
+        option.mdc-list-item(value='hannah_h') Hannah Huang
+        option.mdc-list-item(value='hannah_h') Hannah Huang
+
+      label.mdc-floating-label Category
+  p#para quote quote quote
+
+
+
+
+block body_javascript
+  script 
+    | const select = new mdc.select.MDCSelect(document.querySelector( '.mdc-select'));    
+  
+
+

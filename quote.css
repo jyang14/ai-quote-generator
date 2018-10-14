@@ -1,0 +1,35 @@
+
+#title{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 280%;
+}
+
+body{
+    background-color: rgb(107,255,218);
+    margin: 0;
+}
+
+#para{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 310%;
+}
+
+#pick{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+}
+
+#card{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 250%;
+    background-color: rgb(81, 181, 190);
+}
+
+#top{
+    background-color: blue;
+    margin: 0;
+}
