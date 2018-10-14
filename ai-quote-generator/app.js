@@ -1,7 +1,6 @@
 ﻿'use strict';
 var express = require('express');
 var http = require('http');
-var io = require('socket.io');
 
 // Setting the port number
 var port = process.env.PORT || 8000;
