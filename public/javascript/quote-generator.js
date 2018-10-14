@@ -130,26 +130,25 @@ function randomChoice(p) {
 async function generateQuote(category){
 
     if (model === null) {
-        model = await tf.loadModel('https://raw.githubusercontent.com/jyang14/ai-quote-generation-data/3e50d6f3abf7d61a09d65a43b5768a7cf5c7a027/model.json');
+        model = await tf.loadModel('https://raw.githubusercontent.com/jyang14/ai-quote-generation-data/1918cd1ab6ed10632ee3c4c156be42c451119a60/model.json');
     }
 
     let seed_txt = '(' + category + ')《';
     let seed = seed_txt.split('').map((x) => char2id[x]);
-    model.reset_states();
+    model.resetStates();
     for (let i = 0; i < seed_txt.length - 1; i++) {
-        model.predict([seed[i]]);
+        model.predict(tf.tensor2d([[seed[i]]]));
     }
 
     let result = '';
-    let next = [seed[i]];
-    while (next[0] !== '》') {
-        let p = model.predict(next);
-        next = [randomChoice(p)];
-        result += next[0];
-
+    let next = [[seed[seed_txt.length - 1]]];
+    while (next[0][0] !== char2id['》']) {
+        let p = model.predict(tf.tensor2d(next)).dataSync();
+        next = [[randomChoice(p)]];
+        result += id2char[next[0][0]];
     }
 
-    $('#quote').html(result);
+    $('#quote').html(result.slice(0, -1));
 
 };
 

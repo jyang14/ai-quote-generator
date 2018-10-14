@@ -53,3 +53,15 @@ body {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
+#quote {
+    width: 70%;
+    height: 70%;
+    margin: 0;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
